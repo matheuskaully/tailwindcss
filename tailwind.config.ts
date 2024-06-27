@@ -7,7 +7,12 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 20rem) 1fr',
+        profile: 'max-content 1fr max-content',
+      },
+    },
   },
   plugins: [],
 }
